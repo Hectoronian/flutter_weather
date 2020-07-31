@@ -1,5 +1,5 @@
 name: flutter_weather
-description: A new Flutter application.
+description: Chapter 4-6, Flutter in Action by Eric Windmill
 
 # The following line prevents the package from being accidentally published to
 # pub.dev using `pub publish`. This is preferred for private packages.
@@ -74,3 +74,9 @@ flutter:
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
+
+fonts:
+  - family: Cabin
+    fonts:
+      - asset: assets/fonts/Cabin-Regular.otf
+      - asset: assets/fonts/Cabin-Bold.otf

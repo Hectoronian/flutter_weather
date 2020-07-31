@@ -1,7 +1,16 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 
 void main() {
-  runApp(MyApp());
+  AppSettings settings = AppSettings();
+
+  // Don't allow landscape mode
+  SystemChrome.setPreferredOrientations([
+    DeviceOrientation.portraitUp,
+    DeviceOrientation.portraitDown,
+  ])
+    .then((_) => runApp(MyApp(settings: settings),
+  ));
 }
 
 class MyApp extends StatelessWidget {
